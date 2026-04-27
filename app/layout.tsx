@@ -13,21 +13,48 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://plas-era.com"),
   title: {
     default: "Plasera — Building the Future of Global Commerce",
     template: "%s | Plasera",
   },
   description:
     "Plasera is a technology company building custom software, running cloud & DevOps, and helping businesses cut cloud spend with FinOps consulting and managed services.",
+  keywords: [
+    "Software Development",
+    "Cloud Engineering",
+    "DevOps",
+    "FinOps",
+    "IT Consulting",
+    "Mobile Apps",
+    "Custom Software",
+    "Microsoft Dynamics 365",
+  ],
   authors: [{ name: "Plasera" }],
   openGraph: {
     title: "Plasera — Building the Future of Global Commerce",
     description:
       "Intelligent commerce platforms, enterprise systems, and AI software powering modern digital economies.",
+    url: "https://plas-era.com",
+    siteName: "Plasera",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
+  },
+  alternates: {
+    canonical: "/",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
 };
 
